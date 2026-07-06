@@ -1,0 +1,17 @@
+{
+  "name": "Merge Evolution",
+  "short_name": "MergeEvo",
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "background_color": "#0f2027",
+  "theme_color": "#00ff88",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
