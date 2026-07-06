@@ -9,7 +9,7 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; font-family: 'Poppins', sans-serif; }
-body { background: var(--bg-grad); color: var(--text); overflow: hidden; height: 100vh; width: 100vw; touch-action: none; }
+body { background: var(--bg-grad); color: var(--text); overflow-x: hidden; overflow-y: auto; min-height: 100vh; width: 100vw; }
 
 #app {
     display: flex; flex-direction: column;
@@ -51,6 +51,7 @@ body { background: var(--bg-grad); color: var(--text); overflow: hidden; height:
 }
 #board {
     display: grid; gap: 3px;
+    touch-action: none; /* Mobilde hücre sürüklerken sayfa kaymasın */
     background: rgba(0, 0, 0, 0.6); /* Karanlık net bir platform */
     padding: 6px; border-radius: 12px;
     width: 100%; max-width: 500px;
@@ -149,6 +150,7 @@ body { background: var(--bg-grad); color: var(--text); overflow: hidden; height:
 .modal-content {
     background: var(--bg-grad); padding: 25px; border-radius: 20px; width: 90%; max-width: 400px;
     border: 1px solid var(--glass-border); box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    max-height: 85vh; overflow-y: auto;
 }
 .shop-btn {
     display: flex; align-items: center; justify-content: space-between;
